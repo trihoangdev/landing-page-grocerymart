@@ -4,8 +4,13 @@
   align-items: center;
   gap: 14px;
   @include abstracts.breakpoint(lg) {
-    margin-left: 39px;
     gap: 10px;
+    margin-left: 40px;
+  }
+
+  @include abstracts.breakpoint(sm) {
+    gap: 10px;
+    margin-left: 0;
   }
 
   &__title {
