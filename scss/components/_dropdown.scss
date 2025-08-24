@@ -1,0 +1,123 @@
+@use "../abstracts";
+
+.dropdown {
+  position: absolute;
+  left: 0;
+  padding-top: 54px;
+  width: min(1240px, 100%);
+  display: none;
+
+  &__inner {
+    --inner-max-height: min(582px, 100vh - 158px);
+    --inner-padding: 30px;
+    position: relative;
+
+    padding: var(--inner-padding);
+    border-radius: 20px;
+    background: var(--dropdown-bg-color);
+    box-shadow: 0 40px 90px 20px var(--dropdown-shadow-color);
+
+    &::before {
+      content: url("../icons/dropdown.svg");
+      position: absolute;
+      top: -13px;
+      left: var(--arrow-left-pos);
+      translate: -50%;
+      filter: var(--dropdown-arrow-color);
+    }
+  }
+}
+
+.top-menu {
+  --main-column-width: 292px;
+  position: relative;
+  &__main {
+    width: var(--main-column-width);
+    height: calc(var(--inner-max-height) - var(--inner-padding) * 2);
+    border-right: 1px solid var(--top-menu-border-color);
+    overflow-y: auto;
+  }
+}
+
+.menu-column {
+  display: flex;
+  gap: 14px;
+
+  + .menu-column {
+    margin-top: 17px;
+  }
+
+  &__icon {
+    position: relative;
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+
+    @include abstracts.breakpoint(xl) {
+      display: none;
+    }
+  }
+
+  &__content {
+    flex: 1;
+  }
+
+  &__icon-1 {
+    object-fit: contain;
+    width: 30px;
+    height: 30px;
+  }
+
+  &__icon-2 {
+    object-fit: contain;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    filter: var(--menu-column-icon-color);
+  }
+
+  &__heading {
+    margin-top: 6px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 150%;
+  }
+
+  &__list {
+    margin-top: 19px;
+  }
+
+  &__item {
+    &:hover .sub-menu {
+      display: grid;
+    }
+  }
+
+  &__item:hover > &__link {
+    font-weight: 500;
+    color: #0071dc;
+  }
+
+  &__link {
+    display: block;
+    padding: 7px 0;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 142.857%;
+  }
+}
+
+.sub-menu {
+  position: absolute;
+  inset: 0 0 0 var(--main-column-width);
+
+  display: none;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--inner-padding);
+
+  padding-left: var(--inner-padding);
+
+  overflow-y: auto;
+}
