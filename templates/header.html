@@ -2,7 +2,7 @@
   <div class="header__inner">
     <div class="top-bar">
       <!-- More -->
-      <button class="top-bar__more icon js-toggle" toggle-target="#navbar">
+      <button class="top-bar__more icon js-toggle d-none d-lg-block" toggle-target="#navbar">
         <img src="./assets/icons/more.svg" alt="more" class="top-bar__more-icon" />
       </button>
 
@@ -14,7 +14,7 @@
 
       <!-- Navbar -->
       <nav id="navbar" class="navbar hide">
-        <button class="navbar__close-btn js-toggle" toggle-target="#navbar">
+        <button class="navbar__close-btn d-none d-lg-block js-toggle" toggle-target="#navbar">
           <img src="./assets/icons/arrow-left.svg" alt="close" />
         </button>
 
@@ -3019,13 +3019,13 @@
 
       <!-- Actions -->
       <div class="top-act">
-        <div class="top-act__group top-act__group--single">
+        <div class="top-act__group d-lg-none top-act__group--single">
           <button class="top-act__btn">
             <img src="./assets/icons/search.svg" alt="search" class="top-act__icon icon" />
           </button>
         </div>
 
-        <div class="top-act__group">
+        <div class="top-act__group d-md-none">
           <button class="top-act__btn">
             <img src="./assets/icons/heart.svg" alt="heart" class="top-act__icon icon" />
             <span class="top-act__title">03</span>
@@ -3039,7 +3039,7 @@
 
         <!-- Avatar -->
         <div class="top-act__user">
-          <img src="./assets/img/avatar.jpg" alt="Avatar User" class="top-act__avatar" />
+          <img src="./assets/img/avatar.jpg" alt="Avatar User" class="top-act__avatar d-block" />
         </div>
       </div>
     </div>
