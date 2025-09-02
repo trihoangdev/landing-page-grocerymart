@@ -25,4 +25,16 @@
   height: 50px;
   border-radius: 50%;
   box-shadow: 0 20px 60px rgba(124, 124, 124, 0.2);
+
+  &:not(&--liked) &__icon--liked {
+    display: none;
+  }
+
+  &--liked &__icon {
+    display: none;
+  }
+
+  *__icon--like {
+    margin-top: 6px;
+  }
 }
