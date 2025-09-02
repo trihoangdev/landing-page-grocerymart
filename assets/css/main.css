@@ -2053,7 +2053,6 @@ html {
 }
 .home__cate {
   --grid-gutter-x: 51px;
-  margin-top: 20px;
 }
 @media (max-width: 991.98px) {
   .home__cate {
