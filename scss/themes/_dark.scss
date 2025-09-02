@@ -29,6 +29,14 @@ html.dark {
   --cate-item-thumb-bg: #292e39;
   --cate-item-title-color: #fff;
 
+  // Filter Button
+  --filter-btn-color: #fff;
+  --filter-btn-bg: #171c28;
+
+  // product card
+  --product-card-bg: #171c28;
+  --product-card-shadow: rgba(0, 0, 0, 0.2);
+
   @include abstracts.screen(lg) {
     --header-shadow-color: rgba(0, 0, 0, 0.2);
   }
