@@ -37,6 +37,7 @@ html {
   // Filter Form
   --filter-form-bg: #fff;
   --filter-form-shadow: rgba(200, 200, 200, 0.4);
+  --filter-form-tag-bg: #f8f8fb;
 
   @include abstracts.screen(lg) {
     --header-bg-color: #fff;
