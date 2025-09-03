@@ -173,7 +173,6 @@ textarea,
 select {
   font-family: inherit;
   color: inherit;
-  outline: none;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -1733,12 +1732,14 @@ html {
   flex: 1;
 }
 .menu-column__icon-1 {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   width: 30px;
   height: 30px;
 }
 .menu-column__icon-2 {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   width: 24px;
   height: 24px;
   position: absolute;
@@ -1836,7 +1837,8 @@ html {
   width: 100%;
   height: 100%;
   border-radius: 20px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .slideshow__page {
   position: absolute;
@@ -1845,7 +1847,8 @@ html {
   width: 12.8%;
   display: flex;
   align-items: center;
-  column-gap: 24px;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
 }
 .slideshow__num {
   font-size: 1.8rem;
@@ -1921,7 +1924,8 @@ html {
   width: 116px;
   height: 116px;
   border-radius: 8px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   background: var(--cate-item-thumb-bg);
 }
 @media (max-width: 1399.98px) {
@@ -2020,7 +2024,8 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .product-card__like-btn {
   position: absolute;
@@ -2073,22 +2078,12 @@ html {
   margin-top: 30px;
 }
 .filter__form-label {
-  display: block;
   font-size: 2.2rem;
   font-weight: 500;
   line-height: 145.455%;
 }
-.filter__form-label--small {
-  margin-bottom: 10px;
-  font-size: 1.4rem;
-  line-height: 142.857%;
-}
 .filter__form-group {
   margin-top: 20px;
-}
-.filter__form-group--inline {
-  display: flex;
-  gap: 30px;
 }
 .filter__form-slider {
   position: relative;
@@ -2112,16 +2107,6 @@ html {
 }
 .filter__form-slider::after {
   left: var(--max-value);
-}
-.filter__form-input {
-  width: 121px;
-  padding: 0 12px;
-  border-radius: 6px;
-  border: 1px solid #d2d1d6;
-  height: 36px;
-  font-size: 1.4rem;
-  font-weight: 500;
-  line-height: 142.857%;
 }
 .filter__row {
   display: flex;
@@ -2163,6 +2148,4 @@ html {
 
 .filter-img__icon {
   padding: 4px;
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
